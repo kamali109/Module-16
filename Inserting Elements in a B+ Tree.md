@@ -1,7 +1,7 @@
-# Ex. No: 16D - Inserting Elements in a B+ Tree in Python
+# Ex. No: 16A - Constructing and Printing an AVL Tree in Python
 
 ## AIM:
-To write a Python function `def insert(self, key, value):` to insert elements into a **B+ Tree**.
+To write a Python program to construct an **AVL tree** and print the nodes of it using the appropriate packages and built-in function.
 
 ---
 
@@ -9,37 +9,34 @@ To write a Python function `def insert(self, key, value):` to insert elements in
 
 **Step 1**: Start the program.
 
-**Step 2**: Define a `BPlusTreeNode` class to represent each node in the B+ Tree:
-- Store keys and corresponding values.
-- Maintain child pointers.
-- Track if the node is a leaf.
+**Step 2**: Define a function `getDictTree(tree)` to return the **dict_tree** of an AVL tree.
 
-**Step 3**: Define a `BPlusTree` class to manage the overall structure:
-- Implement methods to insert new keys and values.
-- Handle node splitting when the node exceeds the allowed degree.
+**Step 3**: Define a function `Construct_AVL(L)` to:
+- Create an **AVL tree** from the list `L`.
+- Get and print the **dict_tree** using `getDictTree(tree)`.
 
-**Step 4**: Implement `insert(self, key, value)`:
-- Locate the correct leaf node for insertion.
-- Insert key-value pair.
-- If the node overflows, split the node and propagate the split up if necessary.
+**Step 4**: Define a list `L` with integer values.
 
-**Step 5**: Implement methods to handle:
-- Finding the appropriate node for insertion.
-- Splitting full nodes.
-- Linking leaf nodes for fast range queries.
+**Step 5**: Call `Construct_AVL(L)` to build the tree and print the result.
 
-**Step 6**: Print the B+ Tree level-wise after insertion.
+**Step 6**: End the program.
 
 ---
 
-## PYTHON PROGRAM
+## PYTHON PROGRAM:
+```
+from TreeAVL.AVL import AVL
 
-```
-ENTER YOUR CODE
+def getDictTree(self):
+ return self.dict_tree
+
+def Construct_AVL(L):
+  tree = AVL(L)
+  print(getDictTree(tree))
 ```
 
-## OUTPUT
-```
-```
+## OUTPUT:
+<img width="1212" height="155" alt="image" src="https://github.com/user-attachments/assets/59bf4fd1-0ba8-41e7-9411-6ba72d1fca34" />
 
-## RESULT
+## RESULT:
+Thus the Python program to construct an AVL tree and print the nodes of it using the appropriate packages and built-in function was executed successfully.
